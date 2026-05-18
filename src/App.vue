@@ -10,7 +10,7 @@ import { useSetTheme } from './composables/set-theme'
 import { useSubscriptionNotify } from './composables/subscription-notify'
 import { onMounted } from 'vue'
 import { checkUpdate, ready } from './utils/update'
-import { useMigrationAlert } from './composables/migration-alert'
+// import { useMigrationAlert } from './composables/migration-alert'
 
 defineOptions({
   name: 'App'
@@ -20,7 +20,7 @@ useSetTheme()
 useLoginDialogs()
 useFirstVisit()
 useSubscriptionNotify()
-useMigrationAlert()
+// useMigrationAlert()
 
 const router = useRouter()
 router.afterEach(to => {
